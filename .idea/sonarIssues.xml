@@ -158,6 +158,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/viewmodel/LiveDataTestUtil.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/viewmodel/MainCorotinesRule.kt">
           <value>
             <set />

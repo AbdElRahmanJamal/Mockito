@@ -10,10 +10,7 @@ import kotlinx.coroutines.test.TestCoroutineDispatcher
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.runBlockingTest
 import kotlinx.coroutines.test.setMain
-import org.junit.After
-import org.junit.Before
-import org.junit.Rule
-import org.junit.Test
+import org.junit.*
 import org.mockito.Mock
 import org.mockito.Mockito
 import org.mockito.MockitoAnnotations
@@ -66,6 +63,27 @@ class TestViewModelToDo {
 
             Mockito.verify(viewStatObserver, Mockito.times(1)).onChanged(APIsStatus.LoadingState)
             Mockito.verify(viewStatObserver).onChanged(dataStat)
+        }
+    }
+
+    @Test
+    fun should_sucess_when_get_data_from_api_without_observer() {
+
+        toDoViewMode = ToDoViewMode(toDoRepository, testCoroutineDispatcher)
+
+        val data = emptyList<String>()
+        val dataStat = APIsStatus.DataStat(data)
+
+        testCoroutineDispatcher.runBlockingTest() {
+            //given
+            Mockito.`when`(toDoRepository.getData()).thenReturn(dataStat)
+            //when
+            //toDoViewMode.getRemoteData()
+            val remoteData = toDoViewMode.getRemoteData()
+            //then
+            Assert.assertEquals(remoteData.getOrAwaitValue(), APIsStatus.LoadingState)
+            Assert.assertEquals(remoteData.getOrAwaitValue(), dataStat)
+
         }
     }
 }
