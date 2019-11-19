@@ -3,7 +3,27 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/dummy.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../KoltinCoroutineAndRetrofit/app/src/main/java/com/m/koltincoroutineandretrofit/home/presenration/HomePageViewModel.kt">
           <value>
             <set />
           </value>
@@ -14,6 +34,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/androidTest/java/com.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/m/mockito/ToDoViewModel.kt">
           <value>
             <set />
           </value>
@@ -53,6 +78,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/m/mockito/repoviewmodel/ToDoViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/m/mockito/voidmethodtest/Student.java">
           <value>
             <set />
@@ -88,6 +118,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/PasswordValidation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/SpyObjectTest.kt">
           <value>
             <set />
@@ -119,6 +154,181 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/TestmainClassWithInjectMocks.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/viewmodel/MainCorotinesRule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/viewmodel/MainCoroutineRule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/viewmodel/TestLiveData.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/viewmodel/TestMainCorotineRule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/viewmodel/TestMainCoroutineRule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/viewmodel/TestMainRule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/m/mockito/viewmodel/TestViewModelToDo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/src/main/java/com/m/viewpager2examples/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/src/main/java/com/m/viewpager2examples/ViewPagerAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/src/main/java/com/m/viewpager2examples/ViewPagerPageTransformation.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/src/main/java/com/m/viewpager2examples/ViewPagerPageTransformationMultiPagesInScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/src/main/res/drawable/selected_dots.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/src/main/res/drawable/tab_selector.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/src/main/res/drawable/un_selected_dots.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/src/main/res/layout/item_page.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/src/main/res/layout/selected_dot.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/app/src/main/res/values/dimen.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../rentercode java/ViewPager2examples/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/main/java/hu/vodafone/apps/myvodafone/VFHUApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/main/java/hu/vodafone/apps/myvodafone/model/dto/LoggedUserModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/main/java/hu/vodafone/apps/myvodafone/productsandservice/model/view/GetServiceDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/main/java/hu/vodafone/apps/myvodafone/productsandservice/model/view/Section.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/main/java/hu/vodafone/apps/myvodafone/productsandservice/model/view/ServicesModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/main/java/hu/vodafone/apps/myvodafone/roaming/roamingdetails/presenter/RoamingDetailsItemPresenter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/main/java/hu/vodafone/apps/myvodafone/roaming/roamingdetails/view/RoamingDetailsItemFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/main/java/hu/vodafone/apps/myvodafone/roaming/roaminglist/presenter/RoamingPresenter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/main/java/hu/vodafone/apps/myvodafone/roaming/roaminglist/view/RoamingContractor.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/main/java/hu/vodafone/apps/myvodafone/roaming/roaminglist/view/RoamingFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/main/java/hu/vodafone/apps/myvodafone/roaming/roaminglist/view/RoamingListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/test/java/hu/vodafone/apps/myvodafone/productsandservice/presenter/ProductsAndServicesPresenterTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/test/java/hu/vodafone/apps/myvodafone/roaming/RoamingListTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/src/test/java/hu/vodafone/apps/myvodafone/tarrifchanges/TariffChangeContractTest.java">
           <value>
             <set />
           </value>
