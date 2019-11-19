@@ -6,11 +6,13 @@ import com.m.mockito.repoviewmodel.APIsStatus
 import com.m.mockito.repoviewmodel.ToDoRepository
 import com.m.mockito.repoviewmodel.ToDoViewMode
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.test.TestCoroutineDispatcher
-import kotlinx.coroutines.test.resetMain
-import kotlinx.coroutines.test.runBlockingTest
-import kotlinx.coroutines.test.setMain
-import org.junit.*
+import kotlinx.coroutines.test.*
+import org.junit.Assert
+import org.junit.Rule
+import org.junit.Test
+import org.junit.rules.TestRule
+import org.junit.runner.Description
+import org.junit.runners.model.Statement
 import org.mockito.Mock
 import org.mockito.Mockito
 import org.mockito.MockitoAnnotations
@@ -22,8 +24,8 @@ class TestViewModelToDo {
     @get:Rule
     val instantTaskExecutorRule = InstantTaskExecutorRule()
 
-
-    val testCoroutineDispatcher = TestCoroutineDispatcher()
+    @get:Rule
+    val mainRule = MainRule(this)
 
     @Mock
     private lateinit var toDoRepository: ToDoRepository
@@ -33,27 +35,15 @@ class TestViewModelToDo {
 
     private lateinit var toDoViewMode: ToDoViewMode
 
-    @Before
-    fun before() {
-        Dispatchers.setMain(testCoroutineDispatcher)
-        MockitoAnnotations.initMocks(this)
-    }
-
-    @After
-    fun after() {
-        Dispatchers.resetMain()
-        testCoroutineDispatcher.cleanupTestCoroutines()
-    }
-
     @Test
     fun should_sucess_when_get_data_from_api() {
 
-        toDoViewMode = ToDoViewMode(toDoRepository, testCoroutineDispatcher)
+        toDoViewMode = ToDoViewMode(toDoRepository, mainRule.testCoroutineDispatcher)
 
         val data = emptyList<String>()
         val dataStat = APIsStatus.DataStat(data)
 
-        testCoroutineDispatcher.runBlockingTest() {
+        mainRule.testCoroutineDispatcher.runBlockingTest() {
             //given
             Mockito.`when`(toDoRepository.getData()).thenReturn(dataStat)
             //when
@@ -69,12 +59,12 @@ class TestViewModelToDo {
     @Test
     fun should_sucess_when_get_data_from_api_without_observer() {
 
-        toDoViewMode = ToDoViewMode(toDoRepository, testCoroutineDispatcher)
+        toDoViewMode = ToDoViewMode(toDoRepository, mainRule.testCoroutineDispatcher)
 
         val data = emptyList<String>()
         val dataStat = APIsStatus.DataStat(data)
 
-        testCoroutineDispatcher.runBlockingTest() {
+        mainRule.testCoroutineDispatcher.runBlockingTest() {
             //given
             Mockito.`when`(toDoRepository.getData()).thenReturn(dataStat)
             //when
@@ -86,4 +76,24 @@ class TestViewModelToDo {
 
         }
     }
+}
+
+class MainRule(private val clazz: Any) : TestRule {
+
+    val testCoroutineDispatcher = TestCoroutineDispatcher()
+    val scope = TestCoroutineScope(testCoroutineDispatcher)
+
+    override fun apply(base: Statement?, description: Description?): Statement {
+        return object : Statement() {
+            @Throws(Throwable::class)
+            override fun evaluate() {
+                Dispatchers.setMain(testCoroutineDispatcher)
+                MockitoAnnotations.initMocks(clazz)
+                base!!.evaluate()
+                Dispatchers.resetMain()
+                scope.cleanupTestCoroutines()
+            }
+        }
+    }
+
 }
